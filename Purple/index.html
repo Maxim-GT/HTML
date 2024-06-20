@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Школа разработки Purple School</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,7 +20,7 @@
 <body>
     <header class="header">
         <div class="header__wrapper">
-            <a href="#"><img class="header__logo" src="./images/logo.svg" alt="Логотип Purple School" . /></a>
+            <a href="#"><img class="header__logo" src="./images/logo.svg" alt="Логотип Purple School" /></a>
             <nav>
                 <ul class="menu">
                     <li class="menu__item menu__item_active"><a href="#">Курсы</a></li>
@@ -29,14 +29,13 @@
                     <li class="menu__item"><a href="#">База знаний</a></li>
                 </ul>
             </nav>
-            <a class="header__login">
+            <a class="header__login" href="#" aria-label="Вход в личный кабинет">
                 <img src="./images/user.svg" alt="Иконка юзера">
                 <div>Вход</div>
             </a>
-            <button class="header__mobile-menu-button">
+            <button class="header__mobile-menu-button" aria-expanded="false" aria-haspopup="true">
                 <img src="./images/menu.svg" alt="Мобильное меню">
             </button>
-
 
         </div>
     </header>
@@ -47,13 +46,67 @@
                     Доступные курсы по <br> <span class="hero__h1_gradient">Разработке и DevOps</span>
                 </h1>
                 <div class="hero__cta">
-                    <button class="button button_primary">Выбрать курс</button>
-                    <button class="button button_ghost">О школе</button>
+                    <button tabindex="0" class="button button_primary">Выбрать курс</button>
+                    <button tabindex="1" class="button button_ghost">О школе</button>
                 </div>
             </div>
             <img class="hero__right" src="./images/video.png" alt="Видео">
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__social">
+                <a href="#">
+                    <img class="header__logo" src="./images/logo.svg" alt="Логотип Purple School">
+                </a>
+                <div class="social-icons">
+                    <a href="#" class="social-icons__icon" aria-label="Социальные сети">
+                        <img src="./images/social/youtube.svg" alt="Youtube Purple School">
+                    </a>
+                    <a href="#" class="social-icons__icon" aria-label="Социальные сети">
+                        <img src="./images/social/telegram.svg" alt="Telegram Purple School">
+                    </a>
+                    <a href="#" class="social-icons__icon" aria-label="Социальные сети">
+                        <img src="./images/social/vk.svg" alt="ВКонтакте Purple School">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__menu">
+                <nav>
+                    <div class="footer__menu-header">
+                        Меню
+                    </div>
+                    <ul class="menu-small">
+                        <li class="menu-small__item menu-small__item_active"><a href="#">Курсы</a></li>
+                        <li class="menu-small__item"><a href="#">О школе</a></li>
+                        <li class="menu-small__item"><a href="#">Блог</a></li>
+                        <li class="menu-small__item"><a href="#">База знаний</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <div class="footer__menu-header">Документы</div>
+                    <ul class="menu-small">
+                        <li class="menu-small__item"><a href="#">Договор Оферта</a></li>
+                        <li class="menu-small__item"><a href="#">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer__menu-header">Реквизиты</div>
+                    <ul class="menu-small">
+                        <li class="menu-small__item">ИП Ларичев Антон Андреевич</li>
+                        <li class="menu-small__item">ИНН 879486745869456</li>
+                        <li class="menu-small__item"><a
+                                href="mailto:contact@purpleschool.ru">contact@purpleschool.ru</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                PurpleSchool © 2020 - 2023 Все права защищены
+            </div>
+        </div>
+        </div>
+    </footer>
 </body>
 
 </html>
