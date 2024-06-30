@@ -44,13 +44,15 @@
     }
 }
 
+@media (max-width: 640px) {
+    .header__wrapper {
+        padding: 30px 24px;
+    }
+}
+
 @media (max-width: 480px) {
     .header__logo {
         max-width: 174px;
-    }
-
-    .header__wrapper {
-        padding: 30px 24px;
     }
 }
 
