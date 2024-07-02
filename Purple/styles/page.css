@@ -56,6 +56,65 @@
 
 }
 
+.trust-wrapper {
+    display: grid;
+    grid-template-columns: [start] repeat(3, 1fr) [end];
+    gap: 0 75px;
+}
+
+.trust-wrapper__top {
+    grid-column: start / end;
+}
+
+.trust-wrapper__stat {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    /* margin-bottom: 70px; */
+}
+
+.trust-wrapper__num {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 120%;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.trust-wrapper__desc {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+    color: var(--color-text);
+}
+
+.trust-wrapper__h3 {
+    grid-column: start / end;
+    color: var(--color-text);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 120%;
+    margin-top: 70px;
+}
+
+.trust-wrapper__rating {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    /* margin-bottom: 70px; */
+}
+
+.trust-wrapper__rate {
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 120%;
+    color: var(--color-text);
+}
+
 @media (max-width: 1200px) {
     .hero {
         flex-direction: column;
@@ -67,6 +126,27 @@
 
     .hero__h1 {
         text-align: center;
+    }
+
+    .trust-wrapper {
+        grid-template-columns: [start] repeat(2, 1fr) [end];
+    }
+
+    .trust-wrapper__rating {
+        margin-bottom: 70px;
+
+    }
+
+    .trust-wrapper__stat {
+        margin-bottom: 70px;
+    }
+
+    .trust-wrapper__h3 {
+        margin-top: 0px;
+    }
+
+    .section__wrapper {
+        padding: 50px 24px;
     }
 }
 
@@ -83,6 +163,26 @@
 
     .hero {
         padding: 0 24px;
+    }
+
+    .trust-wrapper {
+        grid-template-columns: [start] 1fr [end];
+    }
+
+    .trust-wrapper__rating {
+        margin-bottom: 70px;
+    }
+
+    .trust-wrapper__stat {
+        margin-bottom: 70px;
+    }
+
+    .trust-wrapper__h3 {
+        margin-top: 0px;
+    }
+
+    .section__wrapper {
+        padding: 50px 24px;
     }
 }
 
